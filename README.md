@@ -17,92 +17,29 @@ Phạm vi kiểm thử: Đăng nhập, xử lý đăng nhập sai, sắp xếp s
 
 ## 2. Công cụ và môi trường thực hiện
 
-Thành phần
-
-Công cụ / Phiên bản
-
-Hệ điều hành
-
-Windows
-
-Ngôn ngữ lập trình
-
-Python 3.14.4
-
-Công cụ tự động hóa
-
-Selenium WebDriver 4.51.0
-
-Framework kiểm thử
-
-pytest 9.1.1
-
-Trình duyệt
-
-Google Chrome
-
-Trình soạn thảo
-
-Visual Studio Code
-
+| Thành phần | Công cụ / Phiên bản |
+|---|---|
+| Hệ điều hành | Windows |
+| Ngôn ngữ lập trình | Python 3.14.4 |
+| Công cụ tự động hóa | Selenium WebDriver 4.51.0 |
+| Framework kiểm thử | pytest 9.1.1 |
+| Trình duyệt | Google Chrome |
+| Trình soạn thảo | Visual Studio Code |
 ### 2.1. Các thư viện sử dụng
 
 selenium: Điều khiển trình duyệt và tương tác với các phần tử trên website.
 
 pytest: Tổ chức, thực thi và báo cáo kết quả các test case.
 
-## 3. Danh sách test case
+## 3. Danh sách Test Case
 
-Bài thực hành xây dựng 05 test case kiểm thử tự động như sau:
-
-Mã test case
-
-Chức năng
-
-Dữ liệu kiểm thử
-
-Kết quả mong đợi
-
-TC01
-
-Đăng nhập thành công
-
-Username: standard_user; Password: secret_sauce
-
-Đăng nhập thành công và hiển thị trang Products
-
-TC02
-
-Đăng nhập thất bại
-
-Username: standard_user; Password: wrong_password
-
-Hiển thị thông báo lỗi đăng nhập
-
-TC03
-
-Sắp xếp sản phẩm
-
-Chọn sắp xếp theo giá tăng dần
-
-Giá các sản phẩm được sắp xếp theo thứ tự tăng dần
-
-TC04
-
-Thêm sản phẩm vào giỏ hàng
-
-Sauce Labs Backpack
-
-Sản phẩm được thêm vào giỏ hàng và số lượng hiển thị là 1
-
-TC05
-
-Đăng xuất
-
-Tài khoản đã đăng nhập thành công
-
-Đăng xuất và quay lại trang đăng nhập
-
+| Mã test case | Chức năng | Dữ liệu kiểm thử | Kết quả mong đợi |
+|---|---|---|---|
+| TC01 | Đăng nhập thành công | Username: `standard_user`; Password: `secret_sauce` | Đăng nhập thành công và hiển thị trang Products |
+| TC02 | Đăng nhập thất bại | Username: `standard_user`; Password: `wrong_password` | Hiển thị thông báo lỗi đăng nhập |
+| TC03 | Sắp xếp sản phẩm | Chọn sắp xếp theo giá tăng dần | Giá các sản phẩm được sắp xếp theo thứ tự tăng dần |
+| TC04 | Thêm sản phẩm vào giỏ hàng | Sauce Labs Backpack | Sản phẩm được thêm vào giỏ hàng và số lượng hiển thị là 1 |
+| TC05 | Đăng xuất | Tài khoản đã đăng nhập thành công | Đăng xuất và quay lại trang đăng nhập |
 ## 4. Cài đặt và thực thi
 
 ### 4.1. Cài đặt môi trường
@@ -133,51 +70,24 @@ Chương trình đã được thực thi trên môi trường Windows bằng Pyt
 
 Kết quả ghi nhận từ lần chạy thực tế:
 
-Mã test case
+| Mã test case | Nội dung kiểm thử | Kết quả |
+|---|---|---|
+| TC01 | Đăng nhập thành công | PASSED |
+| TC02 | Đăng nhập với mật khẩu sai | PASSED |
+| TC03 | Sắp xếp sản phẩm theo giá tăng dần | PASSED |
+| TC04 | Thêm sản phẩm vào giỏ hàng | PASSED |
+| TC05 | Đăng xuất khỏi hệ thống | PASSED |
 
-Nội dung kiểm thử
+### Tổng kết kết quả
 
-Kết quả
+| Chỉ tiêu | Giá trị |
+|---|---:|
+| Tổng số test case | 5 |
+| Số test case thành công | 5 |
+| Số test case thất bại | 0 |
+| Thời gian thực thi | 18,10 giây |
 
-TC01
-
-Đăng nhập thành công
-
-PASSED
-
-TC02
-
-Đăng nhập với mật khẩu sai
-
-PASSED
-
-TC03
-
-Sắp xếp sản phẩm theo giá tăng dần
-
-PASSED
-
-TC04
-
-Thêm sản phẩm vào giỏ hàng
-
-PASSED
-
-TC05
-
-Đăng xuất khỏi hệ thống
-
-PASSED
-
-Tổng kết kết quả:
-
-Tổng số test case: 5
-
-Số test case thành công: 5
-
-Số test case thất bại: 0
-
-Thời gian thực thi: 18,10 giây
+**Kết luận:** Cả 5 test case đều đạt kết quả PASSED, không có test case thất bại. Tổng thời gian thực thi là 18,10 giây.
 
 ## 5.1. Hình ảnh minh chứng
 
@@ -185,6 +95,9 @@ Thời gian thực thi: 18,10 giây
 
 ## 6. Cấu trúc dự án
 
+Cấu trúc thư mục của dự án Selenium Testing như sau:
+
+```text
 Selenium_Testing/
 ├── test_saucedemo.py
 ├── README.md
@@ -192,19 +105,18 @@ Selenium_Testing/
 ├── .gitignore
 └── screenshots/
     └── selenium_test_results.png
+```
 
-Trong đó:
+### Mô tả các thành phần
 
-test_saucedemo.py: Chứa mã nguồn của 05 test case.
-
-README.md: Tài liệu báo cáo và hướng dẫn thực hiện.
-
-requirements.txt: Danh sách thư viện cần cài đặt.
-
-.gitignore: Quy định các file và thư mục không đưa lên GitHub.
-
-screenshots/: Lưu ảnh minh chứng kết quả kiểm thử.
-
+| Tệp / Thư mục | Chức năng |
+|---|---|
+| `test_saucedemo.py` | Chứa mã nguồn của 5 test case kiểm thử tự động bằng Selenium WebDriver và pytest. |
+| `README.md` | Tài liệu giới thiệu dự án, mô tả môi trường, hướng dẫn thực hiện và báo cáo kết quả kiểm thử. |
+| `requirements.txt` | Liệt kê các thư viện Python cần thiết để cài đặt và chạy dự án. |
+| `.gitignore` | Quy định các tệp và thư mục không được đưa lên GitHub. |
+| `screenshots/` | Lưu trữ ảnh minh chứng kết quả kiểm thử. |
+| `selenium_test_results.png` | Ảnh chụp màn hình kết quả chạy kiểm thử tự động. |
 ## 7. Kết luận
 
 Thông qua bài thực hành, sinh viên đã tìm hiểu và áp dụng Selenium WebDriver kết hợp với Python và pytest để kiểm thử tự động các chức năng cơ bản của một website thương mại điện tử.
