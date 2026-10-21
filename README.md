@@ -1,11 +1,11 @@
 # Selenium_Automated_Testing.
-1. Giới thiệu
+## 1. Giới thiệu
 
-1.1. Mục tiêu
+### 1.1. Mục tiêu
 
 Bài thực hành nhằm tìm hiểu và ứng dụng Selenium WebDriver để xây dựng chương trình kiểm thử tự động cho website. Thông qua bài tập, sinh viên làm quen với việc điều khiển trình duyệt bằng Python, thực hiện các thao tác trên giao diện web và sử dụng pytest để kiểm tra kết quả thực tế so với kết quả mong đợi.
 
-1.2. Website kiểm thử
+### 1.2. Website kiểm thử
 
 Tên website: SauceDemo
 
@@ -15,7 +15,7 @@ Loại website: Website mô phỏng bán hàng trực tuyến.
 
 Phạm vi kiểm thử: Đăng nhập, xử lý đăng nhập sai, sắp xếp sản phẩm, thêm sản phẩm vào giỏ hàng và đăng xuất.
 
-2. Công cụ và môi trường thực hiện
+## 2. Công cụ và môi trường thực hiện
 
 Thành phần
 
@@ -45,13 +45,13 @@ Trình soạn thảo
 
 Visual Studio Code
 
-2.1. Các thư viện sử dụng
+### 2.1. Các thư viện sử dụng
 
 selenium: Điều khiển trình duyệt và tương tác với các phần tử trên website.
 
 pytest: Tổ chức, thực thi và báo cáo kết quả các test case.
 
-3. Danh sách test case
+## 3. Danh sách test case
 
 Bài thực hành xây dựng 05 test case kiểm thử tự động như sau:
 
@@ -103,9 +103,9 @@ Tài khoản đã đăng nhập thành công
 
 Đăng xuất và quay lại trang đăng nhập
 
-4. Cài đặt và thực thi
+## 4. Cài đặt và thực thi
 
-4.1. Cài đặt môi trường
+### 4.1. Cài đặt môi trường
 
 Cài đặt Python và Google Chrome, sau đó tạo môi trường ảo:
 
@@ -119,7 +119,7 @@ Cài đặt các thư viện cần thiết:
 
 pip install selenium pytest
 
-4.2. Thực thi chương trình
+### 4.2. Thực thi chương trình
 
 Đặt terminal tại thư mục chứa file test_saucedemo.py, sau đó chạy lệnh:
 
@@ -127,7 +127,7 @@ python -m pytest -v
 
 Selenium WebDriver tự động mở trình duyệt Chrome để thực hiện các thao tác kiểm thử. Pytest ghi nhận trạng thái của từng test case dựa trên các điều kiện kiểm tra được định nghĩa trong chương trình.
 
-5. Kết quả kiểm thử
+## 5. Kết quả kiểm thử
 
 Chương trình đã được thực thi trên môi trường Windows bằng Python, Selenium WebDriver và pytest.
 
@@ -179,13 +179,11 @@ Số test case thất bại: 0
 
 Thời gian thực thi: 18,10 giây
 
-5.1. Hình ảnh minh chứng
+## 5.1. Hình ảnh minh chứng
 
-Ảnh chụp màn hình dưới đây minh họa kết quả thực thi tự động của 05 test case bằng pytest.
+<img width="1516" height="282" alt="image" src="https://github.com/user-attachments/assets/f562b594-da7a-4766-bc1a-19a9f0012e1e" />
 
-
-
-6. Cấu trúc dự án
+## 6. Cấu trúc dự án
 
 Selenium_Testing/
 ├── test_saucedemo.py
@@ -207,7 +205,7 @@ requirements.txt: Danh sách thư viện cần cài đặt.
 
 screenshots/: Lưu ảnh minh chứng kết quả kiểm thử.
 
-7. Kết luận
+## 7. Kết luận
 
 Thông qua bài thực hành, sinh viên đã tìm hiểu và áp dụng Selenium WebDriver kết hợp với Python và pytest để kiểm thử tự động các chức năng cơ bản của một website thương mại điện tử.
 
