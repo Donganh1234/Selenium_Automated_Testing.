@@ -119,7 +119,7 @@ Selenium_Testing/
 | `selenium_test_results.png` | Ảnh chụp màn hình kết quả chạy kiểm thử tự động. |
 ## 7. Kết luận
 
-Thông qua bài thực hành, sinh viên đã tìm hiểu và áp dụng Selenium WebDriver kết hợp với Python và pytest để kiểm thử tự động các chức năng cơ bản của một website thương mại điện tử.
+Thông qua bài thực hành, em đã tìm hiểu và áp dụng Selenium WebDriver kết hợp với Python và pytest để kiểm thử tự động các chức năng cơ bản của một website thương mại điện tử.
 
 Chương trình thực hiện thành công 05 test case, bao gồm đăng nhập hợp lệ, đăng nhập không hợp lệ, sắp xếp sản phẩm, thêm sản phẩm vào giỏ hàng và đăng xuất. Kết quả thực nghiệm cho thấy các điều kiện kiểm thử được xác định đều thỏa mãn trong lần chạy đã ghi nhận.
 
